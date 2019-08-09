@@ -1,0 +1,135 @@
+/*
+@font-face {
+    font-family: 'Heebo';
+    src: url('fonts/heebo-regular.woff2');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Heebo';
+    src: url('fonts/heebo-bold.woff2');
+    font-weight: 600;
+}
+*/
+
+
+/* Typography */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: "Heebo", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+}
+body {
+  color: #241f31;
+  background-color: #f6f5f4;
+}
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 10px;
+  font-weight:500;
+  line-height: 1.25;
+}
+h2 {
+  margin-top: 3rem;
+  font-size: 1.2rem;
+}
+a {
+  font-weight: 600;
+  text-decoration: none;
+  color: #26b763;
+  cursor: pointer;
+}
+a:hover {
+  text-decoration: underline;
+}
+b {
+  font-weight: 600;
+}
+small {
+  color: #777;
+}
+
+/* Layout */
+.container {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 720px;
+}
+
+.logo-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.logo-block {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.logo-block > img {
+  width: 100%;
+  margin-bottom: 0.5rem;
+  display: block;
+  border-radius: 6px;
+}
+
+.logo-block > p {
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 550px) {
+  .logo-block {
+    width: calc(50% - 0.5rem);
+  }
+  .logo-block:nth-child(2n + 1) {
+    margin-right: 1rem;
+  }
+}
+
+/* Singletons */
+.page-logo {
+  display: block;
+  margin: 2rem auto 0;
+}
+
+.brand-green {
+  border-radius: 6px;
+  padding: 3px 6px;
+  background-color: #30D475;
+}
+
+.brand-black {
+  border-radius: 6px;
+  padding: 3px 6px;
+  background-color: #201A26;
+  color: white;
+}
+
+.ok-container {
+  padding: 2px;
+  border-radius: 3px;
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 0.9em;
+  background-color: black;
+  color: white;
+}
+.ok {
+  color: #30D475;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 3em 0 3em;
+  font-size: 1em;
+  margin-top: 4rem;
+}
