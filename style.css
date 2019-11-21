@@ -1,17 +1,14 @@
-/*
 @font-face {
     font-family: 'Heebo';
-    src: url('fonts/heebo-regular.woff2');
+    src: url('fonts/heebo-regular.woff');
     font-weight: 400;
 }
 
 @font-face {
     font-family: 'Heebo';
-    src: url('fonts/heebo-bold.woff2');
+    src: url('fonts/heebo-bold.woff');
     font-weight: 600;
 }
-*/
-
 
 /* Typography */
 * {
