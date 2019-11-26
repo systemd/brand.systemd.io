@@ -68,17 +68,18 @@ small {
 
 .logo-block {
   width: 100%;
-  margin-bottom: 1rem;
+  margin: 1rem 0;
 }
 
 .logo-block > img {
-  width: 100%;
-  margin-bottom: 0.5rem;
+  height: 200px;
+  margin: 0.5rem auto;
   display: block;
   border-radius: 6px;
 }
 
 .logo-block > p {
+  text-align: center;
   font-size: 1rem;
 }
 
@@ -129,4 +130,5 @@ footer {
   padding: 3em 0 3em;
   font-size: 1em;
   margin-top: 4rem;
+  background-color: #fff;
 }

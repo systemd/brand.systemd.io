@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128">
+    <g transform="translate(380 -394.52)">
+        <path fill="#201a26" d="M-380 394.52h128v128h-128z"/>
+        <path overflow="visible" font-weight="400" style="line-height:normal;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-align:start;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000;text-transform:none;text-orientation:mixed;white-space:normal;shape-padding:0;isolation:auto;mix-blend-mode:normal;solid-color:#000;solid-opacity:1" d="M-359 445.52v26h10v-4h-6v-18h6v-4zm76 0v4h6v18h-6v4h10v-26z" color="#000" font-family="sans-serif" fill="#fff"/>
+        <path d="M-314 458.52l18-10v20z" fill="#30d475"/>
+        <circle r="9" cy="458.52" cx="-328.999" fill="#30d475"/>
+    </g>
+</svg>
