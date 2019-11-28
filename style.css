@@ -68,17 +68,25 @@ small {
 
 .logo-block {
   width: 100%;
-  margin-bottom: 1rem;
+  margin-top: 1rem;
 }
 
-.logo-block > img {
-  width: 100%;
-  margin-bottom: 0.5rem;
+.image-container {
   display: block;
+  width: 100%;
   border-radius: 6px;
+  padding: 0.5rem 0;
+}
+
+.image-container > img {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  margin: 0.5rem auto;
 }
 
 .logo-block > p {
+  text-align: center;
   font-size: 1rem;
 }
 
@@ -97,15 +105,20 @@ small {
   margin: 2rem auto 0;
 }
 
-.brand-green {
+.palette {
   border-radius: 6px;
   padding: 3px 6px;
+}
+
+.brand-white {
+  background-color: #fff;
+}
+
+.brand-green {
   background-color: #30D475;
 }
 
 .brand-black {
-  border-radius: 6px;
-  padding: 3px 6px;
   background-color: #201A26;
   color: white;
 }
