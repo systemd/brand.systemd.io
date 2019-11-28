@@ -68,15 +68,21 @@ small {
 
 .logo-block {
   width: 100%;
-  margin: 1rem 0;
+  margin-top: 1rem;
 }
 
-.logo-block > img {
+.image-container {
+  display: block;
+  width: 100%;
+  border-radius: 6px;
+  padding: 0.5rem 0;
+}
+
+.image-container > img {
+  display: block;
   width: 100%;
   max-width: 300px;
   margin: 0.5rem auto;
-  display: block;
-  border-radius: 6px;
 }
 
 .logo-block > p {
@@ -99,15 +105,20 @@ small {
   margin: 2rem auto 0;
 }
 
-.brand-green {
+.palette {
   border-radius: 6px;
   padding: 3px 6px;
+}
+
+.brand-white {
+  background-color: #fff;
+}
+
+.brand-green {
   background-color: #30D475;
 }
 
 .brand-black {
-  border-radius: 6px;
-  padding: 3px 6px;
   background-color: #201A26;
   color: white;
 }
@@ -131,5 +142,4 @@ footer {
   padding: 3em 0 3em;
   font-size: 1em;
   margin-top: 4rem;
-  background-color: #fff;
 }
