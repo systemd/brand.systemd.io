@@ -19,7 +19,7 @@
 html, body {
   margin: 0;
   padding: 0;
-  font-size: 16px;
+  font-size: 1rem;
   font-family: "Heebo", sans-serif;
   font-weight: 400;
   line-height: 1.6;
@@ -29,7 +29,7 @@ body {
   background-color: #f6f5f4;
 }
 h1, h2, h3, h4, h5, h6 {
-  margin: 0 0 10px;
+  margin: 1rem 0 0.625rem;
   font-weight: 600;
   line-height: 1.25;
 }
@@ -105,7 +105,14 @@ small {
 /* Singletons */
 .page-logo {
   display: block;
-  margin: 5rem auto 4rem;
+  padding: 5rem 0 3rem;
+}
+
+.page-logo > img {
+  display: block;
+  width: 12.625em;
+  height: auto;
+  margin: 0 auto;
 }
 
 .palette {
@@ -127,7 +134,7 @@ small {
 }
 
 .ok-container {
-  padding: 2px;
+  padding: 0.125rem;
   border-radius: 3px;
   font-family: monospace;
   font-weight: bold;
