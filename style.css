@@ -67,11 +67,11 @@ small {
 .logo-grid {
   display: flex;
   flex-wrap: wrap;
+  gap: 1rem;
 }
 
 .logo-block {
-  width: 100%;
-  margin-top: 1rem;
+  flex: 1 1 300px;
 }
 
 .image-container {
@@ -91,15 +91,6 @@ small {
 .logo-block > p {
   text-align: center;
   font-size: 1rem;
-}
-
-@media screen and (min-width: 550px) {
-  .logo-block {
-    width: calc(50% - 0.5rem);
-  }
-  .logo-block:nth-child(2n + 1) {
-    margin-right: 1rem;
-  }
 }
 
 /* Singletons */
