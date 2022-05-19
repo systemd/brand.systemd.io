@@ -10,6 +10,53 @@
     font-weight: 600;
 }
 
+/* Variables */
+:root {
+  --sd-brand-black: hsl(270, 19%, 13%); /* #201A26; */
+  --sd-brand-green: hsl(145, 66%, 51%); /* #30D475; */
+  --sd-brand-white: #fff;
+
+  --sd-green: hsl(145, 66%, 43%); /* #26b763 */
+  --sd-gray-extralight: hsl(30, 10%, 96%); /* #f6f5f4 */
+  --sd-gray-light: hsl(30, 10%, 92%);
+  --sd-gray: hsl(30, 10%, 85%);
+  --sd-gray-dark: hsl(257, 23%, 20%);
+  --sd-gray-extradark: hsl(257, 23%, 16%); /* #241f31 */
+  --sd-blue: hsl(200, 66%, 55%);
+
+  --sd-highlight-bg-light: rgba(255, 255, 255, 1);
+  --sd-highlight-bg-dark: rgba(0, 0, 0, .6);
+  --sd-highlight-inline-bg-light: rgba(0, 0, 0, 0.07);
+  --sd-highlight-inline-bg-dark: rgba(255, 255, 255, 0.1);
+
+  --sd-font-weight-normal: 400;
+  --sd-font-weight-bold: 600;
+
+  /* Light mode variables */
+  --sd-foreground-color: var(--sd-gray-extradark);
+  --sd-background-color: var(--sd-gray-extralight);
+  --sd-logo-color: var(--sd-brand-black);
+  --sd-link-color: var(--sd-green);
+  --sd-small-color: var(--sd-gray-dark);
+  --sd-highlight-bg: var(--sd-highlight-bg-light);
+  --sd-highlight-inline-bg: var(--sd-highlight-inline-bg-light);
+  --sd-link-font-weight: var(--sd-font-weight-bold);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+    --sd-foreground-color: var(--sd-gray);
+    --sd-background-color: var(--sd-brand-black);
+    --sd-logo-color: var(--sd-brand-white);
+    --sd-link-color: var(--sd-brand-green);
+    --sd-small-color: var(--sd-gray);
+    --sd-highlight-bg: var(--sd-highlight-bg-dark);
+    --sd-highlight-inline-bg: var(--sd-highlight-inline-bg-dark);
+    --sd-link-font-weight: var(--sd-font-weight-normal);
+  }
+}
+
 /* Typography */
 * {
   -moz-box-sizing: border-box;
@@ -25,25 +72,39 @@ html, body {
   line-height: 1.6;
 }
 body {
-  color: #241f31;
-  background-color: #f6f5f4;
+  color: var(--sd-foreground-color);
+  background-color: var(--sd-background-color);
 }
 h1, h2, h3, h4, h5, h6 {
   margin: 1rem 0 0.625rem;
   font-weight: 600;
   line-height: 1.25;
 }
+h1 {
+  text-align: center;
+  font-size: 1.87rem;
+  font-weight: 400;
+  font-style: normal;
+  margin-bottom: 2rem;
+}
+@media screen and (min-width: 650px) {
+  h1 {
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 2.375em;
+  }
+}
 h2 {
-  margin-top: 3rem;
   font-size: 1.25rem;
+  margin-top: 2.5em;
 }
 h3 {
   font-size: 1.15rem;
 }
 a {
-  font-weight: 600;
+  font-weight: var(--sd-link-font-weight);
   text-decoration: none;
-  color: #26b763;
+  color: var(--sd-link-color);
   cursor: pointer;
 }
 a:hover {
@@ -53,7 +114,7 @@ b {
   font-weight: 600;
 }
 small {
-  color: #777;
+  color: var(--sd-small-color);
 }
 
 /* Layout */
@@ -78,14 +139,13 @@ small {
   display: block;
   width: 100%;
   border-radius: 6px;
-  padding: 0.5rem 0;
+  padding: 0.2rem;
 }
 
 .image-container > img {
   display: block;
   width: 100%;
-  max-width: 300px;
-  margin: 0.5rem auto;
+  height: auto;
 }
 
 .logo-block > p {
@@ -97,9 +157,9 @@ small {
 .page-logo {
   display: block;
   padding: 5rem 0 3rem;
+  color: var(--sd-logo-color);
 }
-
-.page-logo > img {
+.page-logo > svg {
   display: block;
   width: 12.625em;
   height: auto;
@@ -112,16 +172,23 @@ small {
 }
 
 .brand-white {
-  background-color: #fff;
+  background-color: var(--sd-brand-white);
 }
 
 .brand-green {
-  background-color: #30D475;
+  background-color: var(--sd-brand-green);
+  color: var(--sd-gray-extradark);
 }
 
 .brand-black {
-  background-color: #201A26;
-  color: white;
+  background-color: var(--sd-brand-black);
+  color: var(--sd-brand-white);
+}
+@media (prefers-color-scheme: dark) {
+  .brand-black {
+    background-color: var(--sd-gray-extralight);
+    color: var(--sd-brand-black);
+  }
 }
 
 .ok-container {
@@ -133,9 +200,20 @@ small {
   background-color: black;
   color: white;
 }
-.ok {
-  color: #30D475;
+
+.ok,
+.colo-green {
+  color: var(--sd-brand-green);
 }
+
+.color-blue {
+  color: var(--sd-blue);
+}
+
+.page-link::after {
+  content: " ➜";
+}
+
 
 /* Footer */
 footer {
