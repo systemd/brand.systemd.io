@@ -158,12 +158,23 @@ small {
   display: block;
   padding: 5rem 0 3rem;
   color: var(--sd-logo-color);
+  
+  -webkit-user-select: none; /* Safari */        
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
 }
+
 .page-logo > svg {
   display: block;
   width: 12.625em;
   height: auto;
   margin: 0 auto;
+    
+  -webkit-user-select: none; /* Safari */        
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
 }
 
 .palette {
@@ -173,6 +184,12 @@ small {
 
 .brand-white {
   background-color: var(--sd-brand-white);
+    
+  
+  -webkit-user-select: none; /* Safari */        
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
 }
 
 .brand-green {
@@ -183,6 +200,12 @@ small {
 .brand-black {
   background-color: var(--sd-brand-black);
   color: var(--sd-brand-white);
+    
+  
+  -webkit-user-select: none; /* Safari */        
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
 }
 @media (prefers-color-scheme: dark) {
   .brand-black {
